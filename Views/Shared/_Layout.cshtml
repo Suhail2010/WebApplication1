@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <h1>WepApp Application</h1>
+    </header>
+    <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+            <li>@Html.ActionLink("Doctor", "Index", "Doctor")</li>
+            <li>@Html.ActionLink("CheckTemp", "CheckTemp", "Doctor")</li>
+
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="panel-footer">
+        <p>@DateTime.Now.Year - Muhannad Suhail</p>
+    </footer>
+
+</body>
+</html>
